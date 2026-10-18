@@ -8,8 +8,8 @@
             Padding="30,0"
             Spacing="25">
             <Image
-                Source="dotnet_bot.png"
-                HeightRequest="185"
+                Source="dotnet_car.png"
+                HeightRequest="200"
                 Aspect="AspectFit"
                 SemanticProperties.Description="dot net bot in a submarine number ten" />
 
@@ -22,7 +22,17 @@
             <Entry x:Name="txt_gasolina"
                 Placeholder="R$"
                 Keyboard="Numeric" />
-            
+
+            <Label Text="Marca do Veículo:" />
+            <Entry x:Name="txt_marca"
+                Placeholder="Ex: Fiat, Chevrolet, etc."
+                Keyboard="Text" />
+
+            <Label Text="Modelo do Veículo:" />
+            <Entry x:Name="txt_modelo"
+                Placeholder="Ex: Uno Fire, Onix, etc."
+                Keyboard="Text" />
+
             <Button Text="Qual compensa mais?" Clicked="Button_Clicked" />
 
         </VerticalStackLayout>
